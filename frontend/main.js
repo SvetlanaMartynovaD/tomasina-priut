@@ -3,7 +3,7 @@
 const IN_FRONTEND_DIR = /\/frontend\//i.test(window.location.pathname);
 
 // Поменяйте на (адрес сайта на хостинге)
-const API_BASE = '/api/';
+const API_BASE = 'https://tomasp-svetlanamartinova2409.amvera.io/api/';
 
 
 const HOME_PATH = IN_FRONTEND_DIR ? '../index.html' : 'index.html';
