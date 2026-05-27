@@ -7,6 +7,6 @@ build:
   requirementsPath: requirements.txt
 
 run:
-  command: gunicorn --bind 0.0.0.0:5000 "backend.run:app"
+  command: gunicorn --bind 0.0.0.0:5000 backend.app:create_app()
   containerPort: 5000
   persistenceMount: /data
