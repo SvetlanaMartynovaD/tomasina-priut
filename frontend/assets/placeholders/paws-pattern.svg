@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="none">
+  <g fill="#D3D5D8" opacity="0.9">
+    <!-- paw A -->
+    <ellipse cx="26" cy="24" rx="6" ry="9"/>
+    <ellipse cx="38" cy="16" rx="5" ry="8"/>
+    <ellipse cx="50" cy="16" rx="5" ry="8"/>
+    <ellipse cx="61" cy="24" rx="6" ry="9"/>
+    <ellipse cx="44" cy="41" rx="18" ry="13"/>
+
+    <!-- paw B -->
+    <ellipse cx="94" cy="28" rx="5" ry="8"/>
+    <ellipse cx="103" cy="21" rx="4" ry="7"/>
+    <ellipse cx="113" cy="21" rx="4" ry="7"/>
+    <ellipse cx="122" cy="28" rx="5" ry="8"/>
+    <ellipse cx="108" cy="42" rx="14" ry="10"/>
+
+    <!-- paw C -->
+    <ellipse cx="22" cy="88" rx="5" ry="8"/>
+    <ellipse cx="31" cy="82" rx="4" ry="7"/>
+    <ellipse cx="41" cy="82" rx="4" ry="7"/>
+    <ellipse cx="49" cy="89" rx="5" ry="8"/>
+    <ellipse cx="35" cy="102" rx="14" ry="10"/>
+
+    <!-- paw D -->
+    <ellipse cx="88" cy="96" rx="6" ry="9"/>
+    <ellipse cx="100" cy="88" rx="5" ry="8"/>
+    <ellipse cx="112" cy="88" rx="5" ry="8"/>
+    <ellipse cx="123" cy="96" rx="6" ry="9"/>
+    <ellipse cx="106" cy="114" rx="18" ry="13"/>
+  </g>
+</svg>

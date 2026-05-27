@@ -1,0 +1,483 @@
+.admin-page,
+.admin-main {
+  background: #efefef;
+}
+
+.admin-main {
+  min-height: 760px;
+  padding: 28px 22px 22px;
+}
+
+.admin-auth-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.admin-auth-links a,
+.admin-logout-link {
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  color: #111;
+  font-family: var(--font-title);
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.admin-section {
+  width: min(1290px, 100%);
+  margin: 0 auto 28px;
+}
+
+.admin-section h1,
+.admin-section h2 {
+  margin: 0 0 14px;
+  font-family: var(--font-title);
+  font-size: 50px;
+  font-weight: 500;
+  color: #111;
+}
+
+.admin-message {
+  min-height: 18px;
+  margin: 0 0 10px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+}
+
+.admin-message.error { color: #c73b3b; }
+.admin-message.ok { color: #2f9432; }
+
+.pet-requests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 16px;
+}
+
+.pet-card {
+  background: #d8d4d4;
+  border: 1px solid #7e7e7e;
+  border-radius: 18px;
+  padding: 10px 14px;
+  min-width: 0;
+}
+
+.pet-card-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.pet-status {
+  font-family: var(--font-ui);
+  color: #505050;
+  font-size: clamp(24px, 2.1vw, 43px);
+  line-height: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pet-status--new {
+  color: #6b6b6b;
+}
+
+.pet-status--processing {
+  color: #d59a00;
+}
+
+.pet-status--approved {
+  color: #2f9432;
+}
+
+.pet-status--rejected {
+  color: #d94848;
+}
+
+.pet-status--closed {
+  color: #4f6f8f;
+}
+
+.pet-number {
+  font-family: var(--font-ui);
+  color: #39d332;
+  font-size: 46px;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pet-card p {
+  margin: 6px 0 0;
+  font-family: var(--font-title);
+  font-size: 34px;
+  color: #222;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+}
+
+.pet-detail {
+  margin-top: 8px;
+  text-align: right;
+  font-family: var(--font-ui);
+  font-size: 16px;
+  color: #555;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 0;
+}
+
+.registration-requests-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.reg-card {
+  background: #d8d4d4;
+  border: 1px solid #7e7e7e;
+  border-radius: 18px;
+  padding: 12px 14px 10px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-name {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 36px;
+  line-height: 0.95;
+  color: #5c5c5c;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.reg-meta,
+.reg-text {
+  margin: 8px 0 0;
+  color: #666;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.reg-text {
+  margin-top: 10px;
+  min-height: 56px;
+}
+
+.reg-actions {
+  margin-top: auto;
+  display: grid;
+  gap: 4px;
+  justify-items: center;
+}
+
+.reg-btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 34px;
+  line-height: 1;
+  padding: 0;
+}
+
+.reg-btn.approve { color: #45d63e; }
+.reg-btn.reject { color: #ff5454; }
+.reg-btn:disabled { opacity: .55; cursor: default; }
+
+.reg-status {
+  margin-top: auto;
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 22px;
+}
+
+.reg-status.pending { color: #e2a300; }
+.reg-status.approved { color: #2f9432; }
+.reg-status.rejected { color: #c73b3b; }
+
+.admin-section-link-wrap {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.admin-section-link {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: #4f4f4f;
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 30px;
+}
+
+.admin-footer {
+  margin-top: 8px;
+}
+
+.admin-footer-inner {
+  align-items: center;
+}
+
+.admin-stats-anchor {
+  height: 2px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.admin-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1200;
+}
+
+.admin-modal.open {
+  display: block;
+}
+
+.admin-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+}
+
+.admin-modal-dialog {
+  position: relative;
+  width: min(860px, calc(100% - 24px));
+  max-height: calc(100vh - 36px);
+  overflow: auto;
+  margin: 18px auto;
+  background: #efefef;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  padding: 16px 16px 14px;
+}
+
+.admin-modal-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  border: 0;
+  background: transparent;
+  font-family: var(--font-ui);
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+}
+
+.admin-modal-dialog h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-title);
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.admin-modal-message {
+  min-height: 18px;
+  margin: 0 0 8px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+}
+
+.admin-modal-message.ok { color: #2f9432; }
+.admin-modal-message.error { color: #c73b3b; }
+
+.admin-modal-content {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.admin-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 14px;
+}
+
+.admin-modal-grid p {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: #333;
+}
+
+.admin-modal-block {
+  margin-top: 10px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: #333;
+}
+
+.admin-modal-block b {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.admin-modal-current-status {
+  margin: 10px 0 0;
+  font-family: var(--font-ui);
+  font-size: 15px;
+}
+
+.admin-modal-current-status span {
+  color: #2f9432;
+}
+
+.admin-modal-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.admin-status-btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 8px;
+  font-family: var(--font-ui);
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform .15s ease, filter .15s ease;
+}
+
+.admin-status-btn.approve { background: #39b64a; }
+.admin-status-btn.rejected { background: #de5959; }
+.admin-status-btn.processing { background: #6f6f6f; }
+.admin-status-btn.closed { background: #4f6f8f; }
+.admin-status-btn.delete { background: #8a3f3f; }
+
+.admin-status-btn.active {
+  box-shadow: inset 0 0 0 2px #ffffff, 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.admin-status-btn:hover,
+.admin-status-btn:focus-visible {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+}
+
+.admin-status-btn:disabled {
+  opacity: .6;
+  cursor: default;
+  transform: none;
+}
+
+@media (max-width: 1200px) {
+  .admin-auth-links a,
+  .admin-logout-link { font-size: 25px; }
+
+  .admin-section h1,
+  .admin-section h2 { font-size: 42px; }
+
+  .pet-status { font-size: 34px; }
+  .pet-number { font-size: 37px; }
+  .pet-card p { font-size: 28px; }
+
+  .reg-name { font-size: 30px; }
+  .reg-btn { font-size: 28px; }
+  .admin-section-link { font-size: 24px; }
+}
+
+@media (max-width: 992px) {
+  .pet-requests-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .registration-requests-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-main {
+    padding: 18px 12px 18px;
+  }
+
+  .admin-auth-links {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .admin-auth-links a,
+  .admin-logout-link {
+    font-size: 18px;
+  }
+
+  .admin-section h1,
+  .admin-section h2 {
+    font-size: 34px;
+  }
+
+  .pet-requests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-requests-grid {
+    grid-template-columns: minmax(200px, clamp(220px, 62vw, 360px));
+    justify-content: center;
+  }
+
+  .reg-card {
+    width: 100%;
+  }
+
+  .pet-status { font-size: 28px; }
+  .pet-number { font-size: 30px; }
+  .pet-card p { font-size: 24px; }
+
+  .reg-name { font-size: 24px; }
+  .reg-btn { font-size: 24px; }
+
+  .admin-section-link {
+    font-size: 20px;
+  }
+
+  .admin-modal-dialog h3 {
+    font-size: 30px;
+  }
+
+  .admin-modal-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-section h1,
+  .admin-section h2 { font-size: 28px; }
+
+  .pet-status { font-size: 24px; }
+  .pet-number { font-size: 26px; }
+  .pet-card p { font-size: 20px; }
+
+  .reg-name { font-size: 20px; }
+  .reg-meta,
+  .reg-text { font-size: 12px; }
+
+  .admin-modal-grid {
+    grid-template-columns: 1fr;
+  }
+}

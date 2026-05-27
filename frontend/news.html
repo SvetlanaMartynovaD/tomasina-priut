@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новости — Приют Томасина</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Russo+One&family=Shantell+Sans:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="news.css" />
+</head>
+<body>
+  <div class="page-shell news-page">
+    <header class="site-header">
+      <div class="header-top">
+        <button class="burger" aria-label="Открыть меню">☰</button>
+        <a href="../index.html" class="brand" aria-label="Томасина"><img src="assets/images/logo.png" alt="Логотип Томасина" /></a>
+        <form class="search-form" role="search"><input type="search" placeholder="поиск" aria-label="Поиск" /></form>
+        <div class="auth-links"><a href="login.html">Войти</a><a href="register.html">Зарегистрироваться</a></div>
+      </div>
+      <nav class="main-nav" aria-label="Главное меню">
+        <a href="../index.html">Главная</a><a href="pets.html">Наши котики</a><a href="news.html">Новости</a><a href="../index.html#about">О приюте</a><a href="../index.html#help">Как помочь</a><a href="../index.html#contacts">Контакты</a>
+      </nav>
+    </header>
+
+    <main class="news-main">
+      <section class="news-feed-section">
+        <h1>Новости</h1>
+        <p class="news-total-pill">Всего <span id="news-total-count">0</span> новости</p>
+
+        <div class="news-feed-top">
+          <a href="add-news.html" id="add-news-btn" class="btn news-add-btn" data-admin-only hidden>Добавить новость</a>
+        </div>
+
+        <div class="news-feed-grid" id="news-feed-grid"></div>
+        <p class="news-feed-end" id="news-feed-end" hidden>Новостей больше нет</p>
+      </section>
+    </main>
+
+    <footer class="site-footer paws-bg">
+      <div class="footer-inner">
+        <img src="assets/images/logo-footer.png" alt="Томасина" class="footer-logo" />
+        <ul class="footer-nav"><li><a href="../index.html">Главная</a></li><li><a href="pets.html">Каталог животных</a></li><li><a href="news.html">Новости</a></li><li><a href="../index.html#about">О нас</a></li></ul>
+        <ul class="footer-nav"><li><a href="register.html">Регистрация</a></li><li><a href="login.html">Вход</a></li></ul>
+        <div class="footer-contacts"><div class="footer-socials"><a href="#" aria-label="VK"><img src="assets/images/vk.png" alt="VK" /></a><a href="#" aria-label="Telegram"><img src="assets/images/telegram.png" alt="Telegram" /></a></div><p>+7 (3952) 62-23-90</p><p>tomasinafond@rambler.ru</p></div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+

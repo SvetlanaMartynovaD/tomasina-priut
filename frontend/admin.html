@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Страница админа — Приют Томасина</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Russo+One&family=Shantell+Sans:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="page-shell admin-page">
+    <header class="site-header">
+      <div class="header-top">
+        <button class="burger" aria-label="Открыть меню">☰</button>
+        <a href="../index.html" class="brand" aria-label="Томасина"><img src="assets/images/logo.png" alt="Логотип Томасина" /></a>
+        <form class="search-form" role="search"><input type="search" placeholder="поиск" aria-label="Поиск" /></form>
+        <div class="admin-auth-links"><a href="admin.html">Профиль</a><button type="button" id="admin-logout" class="admin-logout-link">Выйти</button></div>
+      </div>
+      <nav class="main-nav" aria-label="Главное меню">
+        <a href="../index.html">Главная</a><a href="pets.html">Наши котики</a><a href="news.html">Новости</a><a href="../index.html#about">О приюте</a><a href="../index.html#help">Как помочь</a><a href="../index.html#contacts">Контакты</a>
+      </nav>
+    </header>
+
+    <main class="admin-main" id="profile">
+      <section class="admin-section" id="pet-requests">
+        <h1>Заявки на питомцев</h1>
+        <p class="admin-message" id="admin-message" aria-live="polite"></p>
+        <div class="pet-requests-grid" id="pet-requests-grid"></div>
+        <div class="admin-section-link-wrap"><button type="button" class="admin-section-link" data-toggle-section="pet">Смотреть все заявки</button></div>
+      </section>
+
+      <section class="admin-section" id="registration-requests">
+        <h2>Заявки на регистрацию</h2>
+        <div class="registration-requests-grid" id="registration-requests-grid"></div>
+        <div class="admin-section-link-wrap"><button type="button" class="admin-section-link" data-toggle-section="registration">Смотреть все заявки</button></div>
+      </section>
+      <section id="stats" class="admin-stats-anchor" aria-hidden="true"></section>
+    </main>
+
+    <div class="admin-modal" id="pet-request-modal" aria-hidden="true">
+      <div class="admin-modal-backdrop" data-modal-close></div>
+      <div class="admin-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="pet-request-modal-title">
+        <button type="button" class="admin-modal-close" aria-label="Закрыть" data-modal-close>×</button>
+        <h3 id="pet-request-modal-title">Детали заявки</h3>
+        <p class="admin-modal-message" id="pet-request-modal-message" aria-live="polite"></p>
+        <div class="admin-modal-content" id="pet-request-modal-content"></div>
+        <div class="admin-modal-actions">
+          <button type="button" class="admin-status-btn approve" data-request-status="одобрена">Одобрено</button>
+          <button type="button" class="admin-status-btn rejected" data-request-status="отклонена">Отклонено</button>
+          <button type="button" class="admin-status-btn processing" data-request-status="в обработке">В обработке</button>
+          <button type="button" class="admin-status-btn closed" data-request-status="закрыта">Закрыта</button>
+          <button type="button" class="admin-status-btn delete" data-request-delete>Удалить заявку</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer paws-bg admin-footer">
+      <div class="footer-inner admin-footer-inner">
+        <img src="assets/images/logo-footer.png" alt="Томасина" class="footer-logo" />
+        <ul class="footer-nav"><li><a href="../index.html">Главная</a></li><li><a href="pets.html">Каталог животных</a></li><li><a href="news.html">Новости</a></li><li><a href="../index.html#about">О нас</a></li></ul>
+        <ul class="footer-nav"><li><a href="admin.html#profile">Профиль</a></li><li><a href="stats.html">Статистика</a></li></ul>
+        <div class="footer-contacts"><div class="footer-socials"><a href="#" aria-label="VK"><img src="assets/images/vk.png" alt="VK" /></a><a href="#" aria-label="Telegram"><img src="assets/images/telegram.png" alt="Telegram" /></a></div><p>+7 (3952) 62-23-90</p><p>tomasinafond@rambler.ru</p></div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,194 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Приют Томасина</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Russo+One&family=Shantell+Sans:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="frontend/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-top">
+        <button class="burger" aria-label="Открыть меню">☰</button>
+        <a href="index.html" class="brand" aria-label="Томасина">
+          <img src="frontend/assets/images/logo.png" alt="Логотип Томасина" />
+        </a>
+        <form class="search-form" role="search">
+          <input type="search" placeholder="поиск" aria-label="Поиск" />
+        </form>
+        <div class="auth-links">
+          <a href="frontend/login.html">Войти</a>
+          <a href="frontend/register.html">Зарегистрироваться</a>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Главное меню">
+        <a href="index.html">Главная</a>
+        <a href="frontend/pets.html">Наши котики</a>
+        <a href="frontend/news.html">Новости</a>
+        <a href="#about">О приюте</a>
+        <a href="#help">Как помочь</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-card">
+        <div class="hero-overlay"></div>
+        <img class="hero-bg" src="frontend/assets/images/hero-cat.png" alt="Кошка из приюта Томасина" />
+        <div class="hero-content">
+          <h1>Приют для кошек Томасина</h1>
+          <p>«Дом, где каждая кошка получает второй шанс на счастливую жизнь»</p>
+        </div>
+        <div class="hero-actions">
+          <a href="frontend/pets.html" class="btn btn-primary">Наши котики</a>
+          <a href="frontend/rules.html" class="btn btn-outline">Правила отдачи</a>
+        </div>
+      </section>
+
+      <section class="news paws-bg" id="news">
+        <h2>Последние новости</h2>
+        <div class="news-grid" id="home-news-grid">
+          <p class="news-fallback">Загрузка новостей...</p>
+        </div>
+        <a href="frontend/news.html" class="btn btn-light">Каталог новостей</a>
+      </section>
+
+      <section class="about paws-bg" id="about">
+        <article class="about-intro">
+          <div>
+            <h2>О приюте "Томасина"</h2>
+            <p class="small">Частный приют для кошек в Иркутской области</p>
+            <p class="about-lead">Приют был основан несколько лет назад. Мы прошли путь от содержания животных в квартире до строительства собственного помещения в селе Хомутово. Сейчас в приюте</p>
+            <p class="about-lead">содержится около <strong class="about-accent"><span class="about-number">120</span> КОШЕК.</strong> Каждая из них получает необходимую ветеринарную помощь, любовь и заботу.</p>
+          </div>
+          <img src="frontend/assets/images/logo-1.png" alt="Томасина" class="about-logo" />
+        </article>
+
+        <article class="about-row">
+          <div class="about-text">
+            <h3>Наша миссия</h3>
+            <p>Спасать кошек, оказавшихся в сложной жизненной ситуации: отказ от животных прежними владельцами, потеря, травмы различной степени тяжести. Мы лечим, реабилитируем и находим каждому животному ответственных и любящих хозяев.</p>
+          </div>
+          <img class="about-photo round" src="frontend/assets/images/about-cat-1.png" alt="Фото котика" />
+        </article>
+
+        <article class="about-row reverse">
+          <img class="about-photo round" src="frontend/assets/images/about-cat-2.png" alt="Фото котика" />
+          <div class="about-text">
+            <h3>Команда</h3>
+            <p>В приюте работают профессиональные волонтёры и сотрудники, которые ежедневно заботятся о животных. Мы также привлекаем ветеринаров для лечения и реабилитации подопечных.</p>
+          </div>
+        </article>
+
+        <article class="about-row">
+          <div class="about-text">
+            <p>За время работы приюта сотни кошек обрели новый дом. Мы регулярно проводим мероприятия по пристройству животных, сотрудничаем с другими приютами и волонтёрскими организациями.</p>
+          </div>
+          <img class="about-photo round" src="frontend/assets/images/about-cat-3.png" alt="Фото котика" />
+        </article>
+      </section>
+
+      <section class="help paws-bg" id="help">
+        <div class="help-title-block">
+          <h2>Как помочь приюту</h2>
+          <p>«Мы существуем только на ваши пожертвования и поддержку. Любая помощь важна. Спасибо, что вы с нами!»</p>
+        </div>
+        <div class="help-arrows" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+
+        <article class="help-panel help-panel-finance">
+          <h3>Финансовая помощь</h3>
+          <p class="help-lead">Переведите любую сумму на нашу карту. Даже небольшое пожертвование может спасти жизнь кошки.</p>
+          <div class="help-columns">
+            <div>
+              <div class="help-cat"><img class="help-cat-icon" src="frontend/assets/images/cat-icon-1.png" alt="" aria-hidden="true" /></div>
+              <p class="muted">Карта Сбербанка МИР</p>
+              <p class="big">2202202382857641</p>
+              <p class="muted">получатель Илдиз Анастасия Юрьевна</p>
+            </div>
+            <div>
+              <div class="help-cat"><img class="help-cat-icon" src="frontend/assets/images/cat-icon-1.png" alt="" aria-hidden="true" /></div>
+              <p class="muted">номер только для "Мобильного банка".</p>
+              <p class="big">8 950 131-60-51</p>
+              <p class="muted">Пометка «помощь приюту»</p>
+            </div>
+          </div>
+        </article>
+        <div class="help-divider-note">Переводы только на эту карту! Опасайтесь мошенников!</div>
+
+        <article class="help-panel">
+          <h3>Помощь вещами</h3>
+          <p class="help-lead">Нам всегда нужны следующие вещи: сухой и влажный корм (премиум-класса), наполнитель для лотка, лежанки и домики, игрушки, миски, переноски, медикаменты.</p>
+          <div class="help-columns">
+            <div>
+              <p class="muted">Адрес приюта</p>
+              <p>с. Хомутово, Иркутский район</p>
+              <p class="muted">среда-воскресенье, 10:00-19:00</p>
+            </div>
+            <div>
+              <p class="muted pickup-address">Пункт сбора</p>
+              <p class="pickup-address">парикмахерская «Расческа», ул. Лермонтова, 102</p>
+              <p class="muted">ежедневно, 11:00-20:00</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="volunteer">
+        <h2>Волонтерство</h2>
+        <p>Помощь волонтёров нужна всегда. Вы можете помогать в уходе за животными, выгуле, организации мероприятий, фото и видеосъёмке, распространении информации в соцсетях.</p>
+        <a href="#" class="btn btn-primary">Стать волонтером</a>
+        <p class="small">*Заполни анкету</p>
+      </section>
+
+      <section class="contacts paws-bg" id="contacts">
+        <h2>Контакты</h2>
+        <p>Телефон: <a href="tel:+73952622390">«+7 (3952) 62-23-90»</a><br /><a href="tel:+79501316051">«8-950-131-60-51»</a></p>
+        <p>Email: <a href="mailto:tomasinafond@rambler.ru">tomasinafond@rambler.ru</a></p>
+        <p>Адрес: <span class="contact-accent">с. Хомутово, Иркутский район</span></p>
+        <p>График работы: Среда-воскресенье: <span class="contact-accent">10:00-19:00.</span><br />Понедельник и вторник: <span class="contact-accent">выходные дни</span></p>
+        <p class="contacts-social-title">Социальные сети:</p>
+        <div class="socials">
+          <a href="#" aria-label="VK"><img src="frontend/assets/images/vk.png" alt="VK" /></a>
+          <a href="#" aria-label="Telegram"><img src="frontend/assets/images/telegram.png" alt="Telegram" /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer paws-bg">
+      <div class="footer-inner">
+        <img src="frontend/assets/images/logo-footer.png" alt="Томасина" class="footer-logo" />
+        <ul class="footer-nav">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="frontend/pets.html">Каталог животных</a></li>
+          <li><a href="frontend/news.html">Новости</a></li>
+          <li><a href="#">О нас</a></li>
+        </ul>
+        <ul class="footer-nav">
+          <li><a href="frontend/register.html">Регистрация</a></li>
+          <li><a href="frontend/login.html">Вход</a></li>
+        </ul>
+        <div class="footer-contacts">
+          <div class="footer-socials">
+            <a href="#" aria-label="VK"><img src="frontend/assets/images/vk.png" alt="VK" /></a>
+            <a href="#" aria-label="Telegram"><img src="frontend/assets/images/telegram.png" alt="Telegram" /></a>
+          </div>
+          <p>+7 (3952) 62-23-90</p>
+          <p>tomasinafond@rambler.ru</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="frontend/main.js"></script>
+</body>
+</html>
+
+
+

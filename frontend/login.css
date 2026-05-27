@@ -1,0 +1,118 @@
+﻿.login-page {
+  background: #efefef;
+}
+
+.login-main {
+  background: #efefef;
+  min-height: 760px;
+  padding: 90px 16px 34px;
+}
+
+.login-section {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-section h1 {
+  margin: 0 0 24px;
+  color: #111;
+  font-family: var(--font-title);
+  font-size: 56px;
+  font-weight: 500;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+  background: #d7d3d5;
+  border-radius: 20px;
+  padding: 42px 20px 30px;
+}
+
+.login-form .field-wrap {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.login-form input {
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  background: #f2f2f2;
+  padding: 12px 16px;
+  font-family: var(--font-ui);
+  font-size: 20px;
+  color: #333;
+}
+
+.login-form input::placeholder {
+  color: #8a8a8a;
+}
+
+.login-submit {
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: #72d95e;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.login-message {
+  min-height: 20px;
+  margin: 10px 0 0;
+  font-family: var(--font-ui);
+  font-size: 12px;
+}
+
+.login-message.ok { color: #2f9432; }
+.login-message.error { color: #c73b3b; }
+
+.login-form input.invalid {
+  outline: 2px solid #d86060;
+}
+
+@media (max-width: 1200px) {
+  .login-section h1 { font-size: 48px; }
+}
+
+@media (max-width: 992px) {
+  .login-main { min-height: 650px; padding-top: 60px; }
+  .login-form { max-width: 440px; }
+}
+
+@media (max-width: 768px) {
+  .login-main { padding: 26px 12px 26px; }
+  .login-section { display: flex; flex-direction: column; align-items: center; }
+  .login-section h1 { font-size: 42px; }
+  .login-form {
+    width: min(420px, 88vw);
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 14px 20px;
+  }
+  .login-form input { font-size: 16px; }
+  .login-submit {
+    font-size: 32px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-main { min-height: 560px; }
+  .login-section h1 { font-size: 34px; }
+  .login-form {
+    width: min(420px, 88vw);
+    border-radius: 14px;
+  }
+  .login-form input,
+  .login-submit { border-radius: 10px; }
+  .login-submit { font-size: 24px; }
+}

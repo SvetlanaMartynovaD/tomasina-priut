@@ -1,0 +1,332 @@
+﻿.news-item-page,
+.news-item-main {
+  background: #ffffff;
+}
+
+.news-item-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item-main {
+  flex: 1 0 auto;
+  padding: 18px 14px 30px;
+  min-height: 860px;
+}
+.news-item-section {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.news-item-top {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 54px;
+  align-items: start;
+}
+
+.news-item-media {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #d7d7d7;
+}
+
+.news-item-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  width: 34px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.news-slider-btn.prev { left: 0; border-radius: 0 10px 10px 0; }
+.news-slider-btn.next { right: 0; border-radius: 10px 0 0 10px; }
+
+.news-item-heading-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.news-item-admin-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+
+.news-item-title {
+  margin: 0 0 14px;
+  font-family: var(--font-title);
+  font-size: 56px;
+  line-height: 1;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.news-item-edit {
+  margin-bottom: 14px;
+  color: #2f9432;
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 35px;
+}
+
+.news-item-delete {
+  margin-bottom: 14px;
+  border: 0;
+  border-radius: 999px;
+  background: #ff6a6a;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 20px;
+  line-height: 1;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.news-item-delete:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.news-item-delete:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.news-item-text {
+  margin: 0;
+  max-width: 650px;
+  font-family: var(--font-body);
+  font-size: 34px;
+  line-height: 1.18;
+  color: #1e1e1e;
+  white-space: pre-wrap;
+}
+
+.news-comments {
+  margin-top: 20px;
+}
+
+.news-comments h2,
+.news-comment-form h2 {
+  margin: 0 0 10px;
+  font-family: var(--font-title);
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.news-comments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.news-comment-card {
+  background: #ffffff;
+  border: 1px solid #c8c8c8;
+  border-radius: 16px;
+  padding: 8px 12px;
+}
+
+.news-comment-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.news-comment-name {
+  margin: 0 0 4px;
+  color: #2f9432;
+  font-family: var(--font-ui);
+  font-size: 20px;
+}
+
+.news-comment-delete {
+  border: 0;
+  border-radius: 999px;
+  background: #ff6a6a;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.news-comment-delete:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.news-comment-text {
+  margin: 0;
+  color: #787878;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.2;
+  min-height: 42px;
+}
+
+.news-comments-toggle {
+  margin-top: 8px;
+  text-align: right;
+}
+
+.news-comments-toggle button {
+  border: 0;
+  background: transparent;
+  font-family: var(--font-ui);
+  color: #4d4d4d;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.news-comment-form {
+  margin-top: 24px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news-comment-form-box {
+  background: #d7d3d5;
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.news-comment-form-box input,
+.news-comment-form-box textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 10px 14px;
+  font-family: var(--font-ui);
+  font-size: 36px;
+  color: #8a8a8a;
+  margin-bottom: 8px;
+}
+
+.news-comment-form-box textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.news-comment-submit {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  background: #7bd465;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 38px;
+  padding: 10px;
+}
+
+.news-comment-message {
+  min-height: 16px;
+  text-align: center;
+  margin: 8px 0 0;
+  font-family: var(--font-ui);
+  font-size: 12px;
+}
+
+.news-comment-message.ok { color: #2f9432; }
+.news-comment-message.error { color: #c73b3b; }
+
+.news-item-back {
+  display: inline-block;
+  margin-top: 12px;
+  color: #2f9432;
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 18px;
+}
+
+.news-item-error {
+  font-family: var(--font-ui);
+  font-size: 22px;
+  color: #c73b3b;
+}
+
+@media (max-width: 1200px) {
+  .news-item-top { grid-template-columns: 460px 1fr; gap: 30px; }
+  .news-item-media { height: 400px; }
+  .news-item-title { font-size: 48px; }
+  .news-item-text { font-size: 26px; }
+}
+
+@media (max-width: 992px) {
+  .news-item-top { grid-template-columns: 1fr; gap: 18px; }
+  .news-item-media { max-width: 620px; height: 430px; }
+  .news-comments-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .news-item-heading-row {
+    align-items: flex-start;
+  }
+  .news-item-admin-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+.news-item-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item-main {
+  flex: 1 0 auto; padding: 12px 10px 20px; }
+  .news-item-title { font-size: 40px; }
+  .news-item-edit { font-size: 24px; }
+  .news-item-delete {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  .news-item-text { font-size: 20px; }
+  .news-comments h2,
+  .news-comment-form h2 { font-size: 36px; }
+  .news-comments-grid { grid-template-columns: 1fr; }
+  .news-comments-toggle button { font-size: 22px; }
+  .news-comment-form-box input,
+  .news-comment-form-box textarea { font-size: 24px; }
+  .news-comment-submit { font-size: 30px; }
+}
+
+@media (max-width: 480px) {
+  .news-item-media { height: 290px; }
+  .news-item-title { font-size: 32px; }
+  .news-item-text { font-size: 17px; }
+}
+
+
+

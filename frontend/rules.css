@@ -1,0 +1,144 @@
+﻿.rules-page {
+  background: #f0f0f0;
+}
+
+.rules-main {
+  background: #f3f3f3;
+  padding: 16px 26px 0;
+}
+
+.rules-section {
+  max-width: 1220px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px 0 24px;
+}
+
+.rules-section h1 {
+  margin: 10px 0 12px;
+  font-size: 86px;
+  line-height: 1.04;
+  font-weight: 500;
+  color: #111;
+}
+
+.rules-highlight {
+  margin: 0 auto 16px;
+  color: #32983a;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.rules-intro {
+  max-width: 980px;
+  margin: 0 auto 20px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.rules-card {
+  position: relative;
+  border: 1px solid #92db8f;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  text-align: left;
+  padding: 28px 34px 28px;
+  min-height: 770px;
+}
+
+.rules-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: rules-counter;
+  max-width: calc(100% - 300px);
+  display: grid;
+  row-gap: 14px;
+}
+
+.rules-list li {
+  counter-increment: rules-counter;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  column-gap: 14px;
+  align-items: start;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.rules-list li::before {
+  content: counter(rules-counter);
+  position: static;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #7ad466;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-ui);
+  font-size: 16px;
+}
+
+.rules-cat {
+  position: absolute;
+  right: 24px;
+  bottom: 30px;
+  width: 230px;
+  height: auto;
+}
+
+.rules-note {
+  margin: 16px auto 0;
+  color: #49aa4d;
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.28;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .rules-section h1 { font-size: 68px; }
+  .rules-highlight { font-size: 21px; }
+}
+
+@media (max-width: 992px) {
+  .rules-main { padding: 8px 12px 0; }
+  .rules-section h1 { font-size: 52px; }
+  .rules-card {
+    min-height: auto;
+    padding-bottom: 16px;
+  }
+  .rules-list {
+    max-width: 100%;
+  }
+  .rules-cat {
+    position: static;
+    display: block;
+    margin: 12px auto 0;
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rules-section h1 { font-size: 40px; }
+  .rules-highlight { font-size: 18px; }
+  .rules-intro,
+  .rules-list li { font-size: 14px; }
+  .rules-list li { padding-left: 38px; }
+  .rules-list li::before { width: 27px; height: 27px; font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+  .rules-section h1 { font-size: 32px; }
+  .rules-highlight { font-size: 16px; }
+  .rules-note { font-size: 12px; }
+}

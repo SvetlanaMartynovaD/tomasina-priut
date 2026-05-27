@@ -1,0 +1,20 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Настройки редакторов
+.vscode/
+.idea/
+
+# Файлы с паролями
+.env
+
+# Системные файлы
+.DS_Store
+Thumbs.db
